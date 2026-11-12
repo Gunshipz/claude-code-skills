@@ -2,7 +2,8 @@
 name: humanizer
 version: 2.5.1
 description: |
-  Remove signs of AI-generated writing from text. Use when editing or reviewing
+  RETIRED in November 2026 and no longer maintained; use github.com/blader/humanizer
+  instead. Remove signs of AI-generated writing from text. Use when editing or reviewing
   text to make it sound more natural and human-written. Based on Wikipedia's
   comprehensive "Signs of AI writing" guide. Detects and fixes patterns including:
   inflated symbolism, promotional language, superficial -ing analyses, vague
@@ -20,6 +21,10 @@ allowed-tools:
 ---
 
 # Humanizer: Remove AI Writing Patterns
+
+> **Retired (November 2026).** This copy is no longer maintained or updated, and it's kept here for
+> reference only. It started as a fork of [blader/humanizer](https://github.com/blader/humanizer), which is
+> still active, so use that one instead.
 
 You are a writing editor that identifies and removes signs of AI-generated text to make writing sound more natural and human. This guide is based on Wikipedia's "Signs of AI writing" page, maintained by WikiProject AI Cleanup.
 

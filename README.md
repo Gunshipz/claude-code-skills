@@ -4,7 +4,7 @@ A collection of reusable skills for [Claude Code](https://docs.anthropic.com/en/
 
 ## What are Skills?
 
-Skills are markdown instruction files that give Claude Code specialized capabilities. Drop them into `~/.claude/skills/` and invoke them with slash commands (e.g., `/humanizer`, `/arese`).
+Skills are markdown instruction files that give Claude Code specialized capabilities. Drop them into `~/.claude/skills/` and invoke them with slash commands (e.g., `/arese`, `/ffmpeg`).
 
 ## Installation
 
@@ -20,14 +20,14 @@ cp -r claude-code-skills/skills/* ~/.claude/skills/
 Copy any skill folder into your `~/.claude/skills/` directory:
 
 ```bash
-cp -r claude-code-skills/skills/humanizer ~/.claude/skills/
+cp -r claude-code-skills/skills/arese ~/.claude/skills/
 ```
 
 ## Available Skills
 
 | Skill | Description | Use When |
 |-------|-------------|----------|
-| [humanizer](skills/humanizer/) | Removes AI writing patterns from text | Editing drafts to sound natural |
+| [humanizer](skills/humanizer/) | **Retired (November 2026).** Use [blader/humanizer](https://github.com/blader/humanizer) instead | No longer maintained |
 | [arese](skills/arese/) | Adversarial multi-agent document rewriting | "Make this better" for any document |
 | [ffmpeg](skills/ffmpeg/) | Audio/video processing orchestration | Trimming, converting, compressing media |
 | [docx](skills/docx/) | Word document creation and editing | Building .docx files programmatically |
@@ -39,6 +39,8 @@ cp -r claude-code-skills/skills/humanizer ~/.claude/skills/
 ## Skill Details
 
 ### humanizer
+
+**Retired (November 2026):** no longer maintained. Use [blader/humanizer](https://github.com/blader/humanizer), the project it was forked from, instead.
 
 Identifies and removes 29 documented AI writing patterns based on Wikipedia's "Signs of AI writing" guide. Includes voice calibration (match a user's existing writing style) and a two-pass audit process. Works on any text.
 
