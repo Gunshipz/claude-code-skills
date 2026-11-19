@@ -1,0 +1,20 @@
+{
+  "name": "gunshipz-skills",
+  "owner": { "name": "Gunshipz" },
+  "metadata": {
+    "description": "Practical Claude Code skills for everyday life on a Windows PC",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "everyday-helpers",
+      "description": "Print anything to the right printer and confirm it printed; find, vet and line up purchases up to (never past) the payment step.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/printing-on-windows-pc",
+        "./skills/sourcing-and-ordering"
+      ]
+    }
+  ]
+}

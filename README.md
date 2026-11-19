@@ -8,6 +8,16 @@ Skills are markdown instruction files that give Claude Code specialized capabili
 
 ## Installation
 
+### Everyday helpers (plugin)
+
+```
+claude plugin marketplace add Gunshipz/claude-code-skills
+claude plugin install everyday-helpers@gunshipz-skills
+```
+
+Restart Claude Code afterwards. This installs `printing-on-windows-pc` and `sourcing-and-ordering`.
+
+
 ### Install all skills
 
 ```bash
@@ -27,6 +37,8 @@ cp -r claude-code-skills/skills/arese ~/.claude/skills/
 
 | Skill | Description | Use When |
 |-------|-------------|----------|
+| [printing-on-windows-pc](skills/printing-on-windows-pc/) | Print any file or URL to the right printer and confirm it printed | Labels, worksheets, craft templates, true-size prints |
+| [sourcing-and-ordering](skills/sourcing-and-ordering/) | Find, vet and price-check a purchase, then fill the cart up to the payment step | "Find me a good X", promo codes, craft supplies |
 | [humanizer](skills/humanizer/) | **Retired (November 2026).** Use [blader/humanizer](https://github.com/blader/humanizer) instead | No longer maintained |
 | [arese](skills/arese/) | Adversarial multi-agent document rewriting | "Make this better" for any document |
 | [ffmpeg](skills/ffmpeg/) | Audio/video processing orchestration | Trimming, converting, compressing media |
